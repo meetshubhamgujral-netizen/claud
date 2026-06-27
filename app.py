@@ -12,6 +12,16 @@ Run locally:   streamlit run app.py
 from __future__ import annotations
 
 import io
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+import pandas as pd
+import streamlit as st
+
+from modules.config import APP_ICON, APP_TITLE, MAX_UPLOAD_MB, THEME
+from __future__ import annotations
+
+import io
 
 import pandas as pd
 import streamlit as st
