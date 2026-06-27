@@ -1,3 +1,9 @@
+from __future__ import annotations
+
+import io
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 """
 app.py
 ======
@@ -9,12 +15,6 @@ interactive Gemini chatbot — with no dataset-specific code.
 
 Run locally:   streamlit run app.py
 """
-from __future__ import annotations
-
-import io
-import os, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
 import pandas as pd
 import streamlit as st
 
